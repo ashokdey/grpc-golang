@@ -70,6 +70,6 @@ func DoServerStreaming(c greetpb.GreetServiceClient) {
 			log.Fatalf("Error while receiving stream : %v", err.Error())
 		}
 
-		log.Fatalf("Response: %v", msg.GetResult())
+		log.Printf("Response: %v", msg.GetResult())
 	}
 }
